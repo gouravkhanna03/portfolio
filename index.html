@@ -141,17 +141,50 @@
     }
 </style>
 
-<style>
+  <style>
+    /* [Previous styles remain unchanged until gradient line section] */
+
+    /* ===== GRADIENT LINE FIXES ===== */
+    /* Section Title Lines (Projects, Services etc.) */
+    .section-title-line {
+        height: 3px;
+        background: linear-gradient(to right, #c86ae3, #f90092);
+        margin: -10px auto 0 auto;
+        border-radius: 2px;
+        width: 1000px; /* Wide on desktop */
+    }
+
+    /* Regular gradient lines (for other uses) */
     .gradient-line {
         height: 4px;
-        width: 100px; /* Adjust width as needed */
+        width: 100px;
         background: linear-gradient(to right, #c86ae3, #f90092);
-        margin: 10px auto 20px auto; /* Center the line */
+        margin: 10px auto 20px auto;
         border-radius: 2px;
         animation: lineGrow 1.5s ease-out forwards;
     }
+
+    /* Mobile adjustments */
+    @media (max-width: 767px) {
+        .section-title-line {
+            width: 80% !important;
+            max-width: 200px !important;
+        }
+        
+        /* Prevent horizontal scroll */
+        body, html {
+            overflow-x: hidden !important;
+            position: relative;
+        }
+    }
+
+    @keyframes lineGrow {
+        0% { width: 0%; opacity: 0; }
+        100% { width: 100px; opacity: 1; }
     }
 </style>
+
+
 
 <style>
     /* Ensure proper spacing and centering */
@@ -396,23 +429,18 @@
 
 
 <section data-bs-version="5.1" class="article11 cid-uGlMuUmAkp" id="article11-f">
-    <div class="container" style="padding-top: 40px;"> <!-- Added padding-top -->
+    <div class="container" style="padding-top: 40px;">
         <div class="row justify-content-center">
             <div class="title col-md-12 col-lg-10">
                 <h3 class="mbr-section-title mbr-fonts-style align-center mb-3 display-2"> 
                     <strong>Education</strong>
                 </h3>
-                <div class="gradient-line" style="
-                    height: 3px;
-                    background: linear-gradient(to right, #c86ae3, #f90092);
-                    width: 1000px;
-                    margin: -15px auto 0 auto; <!-- Adjusted top margin to 5px -->
-                    border-radius: 2px;
-                "></div>
+                <div class="section-title-line"></div> <!-- Changed to new class -->
             </div>
         </div>
     </div>
-</section>
+  </section>
+
 
 <section data-bs-version="5.1" class="features026 cid-uGlN8UV2yE" id="features026-h">
 	
@@ -454,24 +482,19 @@
 	</div>
 </section>
 
-<section data-bs-version="5.1" class="article11 cid-uGmfhsUzoJ" id="article11-o">
+ <section data-bs-version="5.1" class="article11 cid-uGmfhsUzoJ" id="article11-o">
     <div class="container">
         <div class="row justify-content-center">
             <div class="title col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mt-0 mb-2 display-2"> <!-- Changed mb-0 to mb-2 -->
+                <h3 class="mbr-section-title mbr-fonts-style align-center mt-0 mb-2 display-2">
                     <strong>Project</strong>
                 </h3>
-                <div class="gradient-line" style="
-                    height: 3px;
-                    background: linear-gradient(to right, #c86ae3, #f90092);
-                    width: 1000px;
-                    margin: -10px auto 0 auto; <!-- Adjusted top margin to 5px -->
-                    border-radius: 2px;
-                "></div>
+                <div class="section-title-line"></div> <!-- Changed to new class -->
             </div>
         </div>
     </div>
-</section>
+  </section>
+
 
 <section data-bs-version="5.1" class="features017 mbr-embla cid-uGmbtnESiY" id="features017-n">
     <div class="position-relative">
@@ -645,24 +668,18 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="article11 cid-uGmhV5FrXf" id="article11-t">
+  <section data-bs-version="5.1" class="article11 cid-uGmhV5FrXf" id="article11-t">
     <div class="container">
         <div class="row justify-content-center">
             <div class="title col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mt-0 mb-2 display-2"> <!-- Changed mb-0 to mb-2 -->
+                <h3 class="mbr-section-title mbr-fonts-style align-center mt-0 mb-2 display-2">
                     <strong>Services</strong>
                 </h3>
-                <div class="gradient-line" style="
-                    height: 3px;
-                    background: linear-gradient(to right, #c86ae3, #f90092);
-                    width: 1000px; <!-- Perfect width for "Services" -->
-                    margin: -10px auto 0 auto; <!-- Adjusted top margin to 5px -->
-                    border-radius: 2px;
-                "></div>
+                <div class="section-title-line"></div> <!-- Changed to new class -->
             </div>
         </div>
     </div>
-</section>
+  </section>
 
 <section data-bs-version="5.1" class="numbers01 cid-uGmj1hrS0F" id="numbers01-u">
     <div class="container">
@@ -852,20 +869,14 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="title col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mt-0 mb-2 display-2"> <!-- Changed mb-0 to mb-2 -->
+                <h3 class="mbr-section-title mbr-fonts-style align-center mt-0 mb-2 display-2">
                     <strong>Contact Me</strong>
                 </h3>
-                <div class="gradient-line" style="
-                    height: 3px;
-                    background: linear-gradient(to right, #c86ae3, #f90092);
-                    width: 1000px;
-                    margin: -15px auto 0 auto; <!-- Adjusted top margin to 5px -->
-                    border-radius: 2px;
-                "></div>
+                <div class="section-title-line"></div> <!-- Changed to new class -->
             </div>
         </div>
     </div>
-</section>
+  </section>
 
 <section data-bs-version="5.1" class="features10 cid-uGmVV9QQOI" id="features010-12">
   
